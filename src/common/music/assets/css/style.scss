@@ -1,0 +1,38 @@
+.btn-music {
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+    position: fixed;
+    top: 60px;
+    right: 60px;
+    z-index: 999;
+    border: 5px solid #fff;
+    border-radius: 80%;
+    padding: 0;
+    animation: btnMusicAni 3s infinite linear;
+    i {
+        width: 80px;
+        height: 80px;
+        text-align: center;
+        line-height: 80px;
+        color: #fff;
+        font-size: 35px;
+        position: absolute;
+        top: -7px;
+        left: -7px;
+    }
+    &.paused {
+        opacity: 0.4;
+        animation: none;
+    }
+}
+
+@keyframes btnMusicAni {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
